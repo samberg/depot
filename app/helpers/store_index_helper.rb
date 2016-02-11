@@ -1,0 +1,2 @@
+module StoreIndexHelper
+end

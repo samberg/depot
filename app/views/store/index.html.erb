@@ -1,0 +1,21 @@
+<h1>This. Is a STORE.</h1>
+<p>Here, you will find everything and anything you could possibly not want.</p>
+
+<% if notice%>
+<p id="notice><%= notice %></p>
+<% end %>
+
+<h2>The Catalog of Infinity*</h2>
+
+<% @products.each do |product| %>
+  <div class="entry">
+    <%= image_tag(product.image_url) %>
+    <h3><%= product.title %></h3>
+    <%= sanitize(product.description) %>
+    <div class="price_line">
+      <span class="price"><%= number_to_currency(product.price) %></span>
+    </div>
+  </div>
+<% end %>
+
+<p>*formally known as the Catalog of Infinite Whiteness </p>

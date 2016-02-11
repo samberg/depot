@@ -1,0 +1,2 @@
+class StoreIndexController < ApplicationController
+end
