@@ -4,12 +4,17 @@ one:
   title: MyString
   description: MyText
   image_url: MyString
-  price: MyString
-  decimal: MyString
+  price: 9.99
 
 two:
   title: MyString
   description: MyText
   image_url: MyString
-  price: MyString
-  decimal: MyString
+  price: 9.99
+
+ruby:
+  title:      Donut
+  description:
+    Is Good. You Buy Now.
+  price:      400000
+  image_url:  ruby.png
