@@ -2,15 +2,17 @@
 <p id="notice"><%= notice %></p>
 <% end %>
 
+<%= render @cart %>
+
 <h2> Your Cart of Finiteness</h2>
 <table>
-  <% @cart.line_items.each do |item|  %>
+  <% @cart.line_item.each do |item| %>
     <tr>
       <td><%= item.quantity %>&times;</td>
       <td><%= item.product.title  %></td>
       <td class="item_price"><%= number_to_currency(item.total_price) %></td>
      </tr>
-     <%	end %>
+     <% end %>
 
     <tr class="total_line">
       <td colspan="2">Total</td>
